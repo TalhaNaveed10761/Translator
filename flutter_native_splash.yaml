@@ -1,0 +1,34 @@
+flutter_native_splash:
+  # Set the background color for the splash screen
+  color: "#FFFFFF"  # Background color
+
+  # Set the splash screen image for all platforms
+  image: assets/native.png
+
+  # Dark mode configurations
+  color_dark: "#FFFFFF"  # Same background color for dark mode
+  image_dark: assets/native.png
+
+  # Android 12+ specific configurations
+  android_12:
+    image: assets/native.png  # Display the same image for Android 12+
+    color: "#FFFFFF"  # Set only the background color
+    image_dark: assets/native.png  # Use the same image for dark mode too
+    color_dark: "#FFFFFF"  # Same background color for dark mode on Android 12+
+
+  # Platform-specific configurations (Optional, if needed)
+  color_android: "#FFFFFF"  # Background color for standard Android
+  color_dark_android: "#FFFFFF"  # Dark mode background color for Android
+  color_ios: "#FFFFFF"  # Background color for iOS
+  color_dark_ios: "#FFFFFF"  # Dark mode background color for iOS
+
+  # Adjust image fill settings to ensure the image covers the entire screen
+  android_gravity: center  # Use 'fill' to ensure image covers the screen on Android
+  ios_content_mode: scaleAspectFill  # Scale aspect fill for iOS
+  web_image_mode: fill  # Ensure the image fills the screen on web
+
+  # Set screen orientation on Android
+  android_screen_orientation: portrait
+
+  # Enable fullscreen splash on Android and iOS
+  fullscreen: true
